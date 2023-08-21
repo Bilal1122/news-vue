@@ -35,6 +35,14 @@ yarn lint
 yarn format
 ```
 
+### ENV
+Add a `.env` file in the root with the following:
+
+```
+VITE_APP_BASE_URL="https://newsapi.org/v2"
+VITE_APP_API_KEY=API_KEY
+```
+
 ### INFO
 
 #### Components
@@ -55,8 +63,6 @@ I also implemented a getter that offers a key-value mapping with the article UUI
 Regarding the history of visited articles:
 
 Presently, I'm maintaining a set of IDs to track visited articles. However, this method isn't entirely accurate. If a search query is active, the history will only reflect articles available in the search results, as it overrides the main article list array. An optimal solution would involve a dedicated history endpoint. However, due to time constraints and for the purpose of showcasing the concept, I've currently implemented it using saved article IDs. This approach is subject to change and can be easily adapted to a more robust solution in the future.
-
-
 
 #### Article Details Page
 
