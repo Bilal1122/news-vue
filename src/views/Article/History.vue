@@ -1,5 +1,5 @@
 <template>
-  <v-dialog v-model="dialogVisible" width="1200" activator="parent">
+  <v-dialog v-model="props.showHistoryModal" width="1200">
     <v-card>
       <v-card-text> Visited Articles </v-card-text>
       <v-container>
@@ -20,7 +20,6 @@
 
 <script lang="ts" setup>
 import { Article } from '@/store/article.module';
-import { ref } from 'vue';
 // @ts-ignore
 import ArticleList from './ArticleList.vue';
 
@@ -30,8 +29,6 @@ const props = defineProps<{
   onArticleClick: (id: string) => void;
   historyModelHandler: () => void;
 }>();
-
-const dialogVisible = ref(props.showHistoryModal);
 </script>
 
 <script lang="ts">

@@ -21,7 +21,7 @@
       />
     </ul>
 
-    <v-dialog v-model="showModal" width="400" activator="parent">
+    <v-dialog v-model="showModal" width="400">
       <v-card>
         <v-card-text> Edit Headline Title </v-card-text>
         <v-container>

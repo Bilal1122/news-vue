@@ -16,3 +16,11 @@ declare module '*.vue' {
   >;
   export default component;
 }
+
+declare namespace NodeJS {
+  interface ProcessEnv {
+    VUE_APP_API_KEY: string;
+    VUE_APP_BASE_URL: string;
+    // Add more environment variables here
+  }
+}

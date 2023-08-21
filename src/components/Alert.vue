@@ -35,4 +35,11 @@ const alerts = computed(() => props.alerts);
   width: 500px;
   min-height: 100px;
 }
+
+@media (max-width: 600px) {
+  .alert {
+    width: auto;
+    max-width: 80vw;
+  }
+}
 </style>
