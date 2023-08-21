@@ -35,6 +35,16 @@ yarn lint
 yarn format
 ```
 
+# OR
+
+### Run with docker
+
+```
+docker-compose up
+```
+
+Server will run on `http://localhost:8080/`
+
 ### ENV
 Add a `.env` file in the root with the following:
 
